@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Watch, BaseComponent } from '@/component';
+import { Component, BaseComponent } from '@/component';
 import { Action } from '@/store/actions';
 import { zipToProject } from '@/services/zip';
 
@@ -35,6 +35,7 @@ export default class Import extends BaseComponent {
 		if (this.$refs.files.files && this.$refs.files.files[0]) {
 			const file = this.$refs.files.files[0];
 			const reader = new FileReader();
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			reader.addEventListener('load', async (event: any) => {
 				const blob = event.target.result;
 				const project = await zipToProject(blob);

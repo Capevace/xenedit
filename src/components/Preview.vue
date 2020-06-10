@@ -26,7 +26,6 @@
 		>
 			<div
 				class="absolute bg-contain overflow-hidden m-auto min-height-0"
-				style="background-image: url('/img/screens/lock1.jpg')"
 				:style="bgStyle"
 			>
 				<div
@@ -45,7 +44,6 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import { Component, Watch, BaseComponent } from '@/component';
 import { Point } from '../models';
 import { Action } from '../store/actions';
@@ -96,6 +94,10 @@ export default class Preview extends BaseComponent {
 		this.shadow.innerHTML = this.htmlContent;
 	}
 
+	get baseUrl(): string {
+		return process.env.BASE_URL || '/';
+	}
+
 	get size(): { width: number; height: number } {
 		return { width: 370, height: 800 };
 	}
@@ -116,7 +118,8 @@ export default class Preview extends BaseComponent {
 			width: `${this.size.width}px`,
 			height: `${this.size.height}px`,
 			transform: `scale(${this.scale})`,
-			transformOrigin: 'left top'
+			transformOrigin: 'left top',
+			backgroundImage: `url('${this.baseUrl}img/screens/lock1.jpg')`
 			// width: `${this.width}px`,
 			// height: `${this.height}px`
 		};
@@ -153,7 +156,7 @@ export default class Preview extends BaseComponent {
 		this.$forceUpdate();
 	}
 
-	onResize(...args: any[]) {
+	onResize() {
 		this.calculateLayout();
 	}
 

@@ -59,7 +59,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Watch, BaseComponent } from '@/component';
+import { Component, BaseComponent } from '@/component';
 import { projectToZip } from '@/services/zip';
 import { Commit } from '@/store/actions';
 
