@@ -2,6 +2,8 @@
 
 > Simple XenHTML widget editor with live preview!
 
+[Live Demo](https://mateffy.me/xenedit/)
+
 ## Features
 
 -   Write HTML, CSS and JavaScript right in the browser
