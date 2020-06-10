@@ -16,13 +16,13 @@
 ## Screenshots
 
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
-<p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
-<p align="center">
   <img src="screenshots/editor.png">
+</p>
+<p align="center">
+  <img src="screenshots/export.png">
+</p>
+<p align="center">
+  <img src="screenshots/import.png">
 </p>
 
 ## Project setup
