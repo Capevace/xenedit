@@ -13,6 +13,18 @@
 -   Custom file support (be able to create custom files, e.g. images)
 -   Settings (be able to specify placeholders that the user will be able to change)
 
+## Screenshots
+
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+<p align="center">
+  <img src="screenshots/editor.png">
+</p>
+
 ## Project setup
 
 ```
