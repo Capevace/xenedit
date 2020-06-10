@@ -7,7 +7,7 @@
 		Simple XenHTML widget editor with live preview!
 	</p>
 	<p>
-		<a href="https://mateffy.me/xenedit">Live Demo</a>
+		<a href="https://mateffy.me/xenedit">Try it out!</a>
 	</p>
 </div>
 
