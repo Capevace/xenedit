@@ -19,7 +19,7 @@
 -   Live-preview for fast progress
 -   Import and Export widgets as ZIP files
 
-## Planned Features
+### Planned
 
 -   Custom file support (be able to create custom files, e.g. images)
 -   Settings (be able to specify placeholders that the user will be able to change)
