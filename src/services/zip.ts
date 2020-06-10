@@ -1,13 +1,19 @@
 import JSZip from 'jszip';
-import { WidgetProject } from '@/models';
+import { WidgetProject, File } from '@/models';
 import { defaultProject } from './helpers';
 
+function renderFile(file: File): string {
+	return file.template ? file.template.replace(/\{\{CONTENT\}\}/, file.content) : file.content;
+}
 
 export async function projectToZip(project: WidgetProject): Promise<Blob> {
 	const zip = new JSZip();
 
 	for (const file of Object.values(project.files)) {
-		zip.file(file.path, file.content);
+		const output = renderFile(file);
+		console.log(output);
+
+		zip.file(file.path, output);
 	}
 
 	zip.file('xenedit.json', JSON.stringify(project.meta, null, 2));

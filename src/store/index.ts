@@ -44,6 +44,7 @@ export default new Vuex.Store<AppState>({
 				...payload.project
 			}
 		},
+
 	},
 	actions: {
 		saveFile(context, payload: SaveFileAction) {

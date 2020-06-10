@@ -29,7 +29,7 @@
 				:style="bgStyle"
 			>
 				<div
-					class="absolute bg-contain"
+					class="absolute bg-contain canvas"
 					:class="{
 						'bg-gray-600 opacity-75 border-4 border-dotted border-gray-900 box-border': !positionLocked
 					}"
@@ -219,4 +219,8 @@ export default class Preview extends BaseComponent {
 }
 </script>
 
-<style></style>
+<style>
+.canvas {
+	font-family: serif;
+}
+</style>

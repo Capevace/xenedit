@@ -25,6 +25,7 @@ export interface File {
 	type: string;
 	content: string;
 	label: string | null;
+	template?: string;
 }
 
 export interface Point {
