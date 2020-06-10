@@ -1,8 +1,17 @@
-# XenEdit
+<div align="center">
+	<a href="https://mateffy.me/xenedit">
+		<img src="public/img/icons/android-chrome-192x192.png">
+	</a>
+	<h1>XenEdit</h1>
+	<p>
+		Simple XenHTML widget editor with live preview!
+	</p>
+	<p>
+		<a href="https://mateffy.me/xenedit">Live Demo</a>
+	</p>
+</div>
 
-> Simple XenHTML widget editor with live preview!
-
-[Live Demo](https://mateffy.me/xenedit/)
+<br>
 
 ## Features
 
