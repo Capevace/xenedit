@@ -12,7 +12,7 @@
     "codeflask": "^1.4.1",
     "core-js": "^3.6.5",
     "cuid": "^2.1.8",
-    "jszip": "^3.4.0",
+    "jszip": "^3.7.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
